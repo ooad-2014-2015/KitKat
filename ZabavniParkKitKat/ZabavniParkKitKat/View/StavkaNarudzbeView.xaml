@@ -1,0 +1,17 @@
+﻿<Window x:Class="ZabavniParkKitKat.View.StavkaNarudzbeView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Stavke_narudzbe" Height="292.58" Width="434.823" >
+    <Grid Margin="0,0,2,0">
+        <Menu HorizontalAlignment="Left" Height="19" VerticalAlignment="Top" Width="415">
+            <MenuItem Header="Fotografije" Command="{Binding Path=Fotografija}"/>
+            <MenuItem Header="Suveniri" Command="{Binding Path=Suvenir}"/>
+        </Menu>
+        <Button Content="Dodaj u korpu" HorizontalAlignment="Left" Margin="234,212,0,0" VerticalAlignment="Top" Width="162" RenderTransformOrigin="0.507,-0.17" Command="{Binding Path=DodajUKorpu}" />
+        <Image HorizontalAlignment="Left" Height="116" Margin="234,24,0,0" VerticalAlignment="Top" Width="164" Source="{Binding Odabrani.Slika,UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="323,161,0,0" TextWrapping="Wrap" Name="TextBox1" VerticalAlignment="Top" Width="75" Text="{Binding Path=Kolicina, UpdateSourceTrigger=PropertyChanged}"/>
+        <Label Content="Kolicina :" HorizontalAlignment="Left" Margin="225,161,0,0" VerticalAlignment="Top" Width="75" Height="23"/>
+        <ListBox HorizontalAlignment="Left" Height="116" Margin="32,24,0,0" VerticalAlignment="Top" Width="162" ItemsSource="{Binding Lista,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" SelectedItem="{Binding Path=Odabrani, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"/>
+
+    </Grid>
+</Window>

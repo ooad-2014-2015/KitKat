@@ -1,0 +1,15 @@
+﻿<Window x:Class="ZabavniParkKitKat.View.PodaciOKartici"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="PodaciOKartici" Height="300" Width="300">
+    <Grid>
+        <Label Content="ID kartice" HorizontalAlignment="Left" Margin="24,38,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ccv" HorizontalAlignment="Left" Margin="24,137,0,0" VerticalAlignment="Top"/>
+        <Label Content="Datum isteka" HorizontalAlignment="Left" Margin="24,86,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.006,-0.015"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="150,38,0,0" TextWrapping="Wrap" Text="{Binding Path=Kartica.Id_Kartice,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" VerticalAlignment="Top" Width="120" />
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="150,137,0,0" TextWrapping="Wrap" Text="{Binding Path=Kartica.Ccv,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.51,2.185"/>
+        <DatePicker HorizontalAlignment="Left" Margin="150,88,0,0" VerticalAlignment="Top" Width="120" SelectedDate="{Binding Path=Kartica.Datum_steka,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" />
+        <Button Content="Potvrdi" HorizontalAlignment="Left" Margin="195,218,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.115,0.915" Command="{Binding Path=Potvrdi}"/>
+
+    </Grid>
+</Window>
