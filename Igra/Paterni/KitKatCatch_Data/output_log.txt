@@ -1,0 +1,21 @@
+Initialize engine version: 5.0.2f1 (0b02744d4013)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics 4000 (ID=0x166)
+    Vendor:   Intel
+    VRAM:     2126 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Amar\Desktop\Igra\Paterni\KitKatCatch_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Amar\Desktop\Igra\Paterni\KitKatCatch_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Amar\Desktop\Igra\Paterni\KitKatCatch_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Amar\Desktop\Igra\Paterni\KitKatCatch_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Amar\Desktop\Igra\Paterni\KitKatCatch_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Amar\Desktop\Igra\Paterni\KitKatCatch_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.056 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Amar\Desktop\Igra\Paterni\KitKatCatch_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Amar\Desktop\Igra\Paterni\KitKatCatch_Data\Managed\System.dll (this message is harmless)
