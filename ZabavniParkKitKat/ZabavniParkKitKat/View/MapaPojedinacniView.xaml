@@ -1,0 +1,20 @@
+﻿<Window x:Class="ZabavniParkKitKat.View.MapaPojedinacniView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Odabrana zona" Height="355" Width="519" ResizeMode="CanMinimize">
+    <Grid>
+        <ListBox HorizontalAlignment="Left" Height="74" Margin="34,41,0,0" VerticalAlignment="Top" Width="100" ItemsSource="{Binding Atrakcije,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" SelectedItem="{Binding Path=OdabranaAtrakcija,UpdateSourceTrigger=PropertyChanged}"/>
+        <Label Content="Odaberite atrakciju&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,10,0,0"/>
+        <Image HorizontalAlignment="Left" Height="149" VerticalAlignment="Top" Width="241" Margin="201,32,0,0" Source="{Binding Path=OdabranaAtrakcija.Slika}"/>
+        <ScrollViewer HorizontalAlignment="Left" Height="99" VerticalAlignment="Top" Width="241" Margin="201,200,0,0">
+            <TextBlock Width="219"  TextWrapping="Wrap" Text="{Binding Path=OdabranaAtrakcija.OpisAtrakcije}"/>
+        </ScrollViewer>
+        <Label Content="Kapacitet" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,155,0,0"/>
+        <Label Content="Ocjena" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,186,0,0"/>
+        <Label Content="Tip atrakcije:&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,217,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Path=OdabranaAtrakcija.Kapacitet}" VerticalAlignment="Top" Margin="98,160,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Path=OdabranaAtrakcija.Ocjena}" VerticalAlignment="Top" Margin="98,191,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Path=OdabranaAtrakcija.TipAtrakcije}" VerticalAlignment="Top" Margin="98,222,0,0"/>
+
+    </Grid>
+</Window>
